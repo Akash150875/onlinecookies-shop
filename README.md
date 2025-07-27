@@ -28,10 +28,6 @@ cookies-shop-website/
 ├── script.js # JavaScript logic for cart and checkout
 └── about.html # Optional About page (if added)
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🛠️ Technologies Used
@@ -47,7 +43,7 @@ Edit
 
 1. Clone or download the repository:
    ```bash
-   git clone https://github.com/yourusername/cookies-shop-website.git
+    https://akash150875.github.io/onlinecookies-shop/
 Open index.html in your browser.
 
 Click "Buy Now" to add cookies to your cart.
@@ -55,9 +51,5 @@ Click "Buy Now" to add cookies to your cart.
 View or proceed to checkout with the cart.
 
 🌐 Live Demo
-👉 View Demo on GitHub Pages
-
+👉 View  https://akash150875.github.io/onlinecookies-shop/
 ✨ Credits
-Product images from Unsplash
-
-Icons by Font Awesome
