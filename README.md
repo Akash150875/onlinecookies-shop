@@ -71,4 +71,3 @@ Scroll to the bottom and fill out the Contact Us form to send a message (for dem
 
 Social Media
 Click the social media icons in the footer to visit linked platforms (e.g., Facebook, Instagram).
-✨ Credits
