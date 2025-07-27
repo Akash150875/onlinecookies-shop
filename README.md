@@ -50,4 +50,25 @@ View or proceed to checkout with the cart.
 
 🌐 Live Demo
 👉 View  https://akash150875.github.io/onlinecookies-shop/
+🧑‍💻 How to Use (For Visitors)
+Browse Products
+Scroll through the cookies displayed on the homepage.
+
+Add to Cart
+Click the “Buy Now” button under any cookie to add it to your cart.
+
+View Cart
+Click the Cart link in the top navigation bar to view your selected items.
+
+Proceed to Buy
+Click the “Proceed to Buy” button in the cart section to simulate a purchase (popup confirmation).
+
+Clear Cart
+Click Clear Cart to remove all items.
+
+Contact Form
+Scroll to the bottom and fill out the Contact Us form to send a message (for demo purposes only).
+
+Social Media
+Click the social media icons in the footer to visit linked platforms (e.g., Facebook, Instagram).
 ✨ Credits
