@@ -42,8 +42,6 @@ cookies-shop-website/
 ## 📦 How to Use
 
 1. Clone or download the repository:
-   ```bash
-    https://akash150875.github.io/onlinecookies-shop/
 Open index.html in your browser.
 
 Click "Buy Now" to add cookies to your cart.
