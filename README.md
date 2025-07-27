@@ -20,17 +20,11 @@ A simple, responsive online cookie store built using **HTML**, **CSS**, and **Ja
 
 ---
 
-## 📸 Preview
-
-![Cookies Shop Website Screenshot]("C:\Akashshop")
-
----
-
 ## 📁 Project Structure
 
 cookies-shop-website/
 ├── index.html # Main page with products
-├── style.css # Styling for layout and design
+├── styel.css # Styling for layout and design
 ├── script.js # JavaScript logic for cart and checkout
 └── about.html # Optional About page (if added)
 
