@@ -1,0 +1,251 @@
+/* General Reset and Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #d2691e;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.product, .product-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.product:hover, .product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product img, .product-card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product h2, .product-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #d2691e;
+}
+
+.product p, .product-card p {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a0522d;
+}
+
+#cart-section {
+  background: #fff3e6;
+  border: 1px solid #d2691e;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+#cart-items {
+  list-style: none;
+  margin-bottom: 10px;
+  padding-left: 0;
+}
+
+#cart-items li {
+  padding: 8px 5px;
+  border-bottom: 1px solid #d2691e;
+}
+
+#total-items,
+#total-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact form {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d2691e;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #d2691e;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #d2691e;
+  font-size: 1rem;
+}
+
+.contact button {
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #d2691e;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: auto;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 8px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-icons a:hover {
+  color: #a0522d;
+}
+
+/* Checkout page styles */
+#order-summary {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: #fff3e6;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d2691e;
+}
+
+#order-items {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 15px;
+}
+
+#order-items li {
+  padding: 8px 0;
+  border-bottom: 1px solid #d2691e;
+}
+
+#order-total {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#checkout-form {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #d2691e;
+}
+
+#checkout-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #d2691e;
+}
+
+#checkout-form input,
+#checkout-form textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #d2691e;
+  font-size: 1rem;
+}
+
+#checkout-form button {
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#checkout-form button:hover {
+  background-color: #a0522d;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Checkout - Cookies Shop</title>
+  <link rel="stylesheet" href="styel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Cookies Shop - Checkout</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html">Back to Shop</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="order-summary">
+      <h2>Your Order Summary</h2>
+      <ul id="order-items"></ul>
+      <p id="order-total"></p>
+    </section>
+
+    <section id="checkout-form">
+      <h2>Complete Your Purchase</h2>
+      <form id="form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Follow us on:</p>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p>&copy; 2025 Cookies Shop</p>
+  </footer>
+
+  <script>
+    const prices = {
+      "Chocolate Chip Cookie": 5,
+      "Peanut Butter Cookie": 4,
+      "Oatmeal Raisin Cookie": 6,
+      "Strawberry Cookies": 8,
+      "Red Velvet Cake": 25,
+    };
+
+    const orderItemsList = document.getElementById("order-items");
+    const orderTotalElem = document.getElementById("order-total");
+
+    let cart = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    if (cart.length === 0) {
+      orderItemsList.innerHTML = "<li>Your cart is empty.</li>";
+      orderTotalElem.textContent = "";
+    } else {
+      const itemCount = {};
+      cart.forEach((item) => {
+        itemCount[item] = (itemCount[item] || 0) + 1;
+      });
+
+      let totalPrice = 0;
+
+      for (const item in itemCount) {
+        const price = prices[item] * itemCount[item];
+        totalPrice += price;
+        const li = document.createElement("li");
+        li.textContent = `${item} x ${itemCount[item]} = $${price}`;
+        orderItemsList.appendChild(li);
+      }
+      orderTotalElem.textContent = "Total Price: $" + totalPrice;
+    }
+
+    document.getElementById("form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for your order, " + this.name.value + "! We will contact you shortly.");
+      localStorage.removeItem("cartItems");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+
+</html>
